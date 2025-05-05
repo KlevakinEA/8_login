@@ -52,12 +52,14 @@ namespace _8_login
         private void L_Window_Closed(object? sender, EventArgs e)
         {
             U_ID = Login.Selected_login;
+            Update();
             Visibility = Visibility.Visible;
             Activate();
         }
         private void R_Window_Closed(object? sender, EventArgs e)
         {
             U_ID = Registration.Selected_registration;
+            Update();
             Visibility = Visibility.Visible;
             Activate();
         }
